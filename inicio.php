@@ -10,7 +10,7 @@ include "Soporte.php";
 
 echo "<br><br>"; // Añadimos un espacio para separar las pruebas
 
-include "CintaVideo.php";
+include "CintaDeVideo.php";
 $miCinta = new CintaVideo("Los cazafantasmas", 23, 3.5, 107);
 echo "<strong>" . $miCinta->titulo . "</strong>";
 echo "<br>Precio: " . $miCinta->getPrecio() . " euros";
@@ -28,7 +28,7 @@ $miDvd->muestraResumen();
 
 echo "<br><br>"; // Añadimos un espacio para separar las pruebas
 
-include "Juego.php";
+include "juego.php";
 $miJuego = new Juego("The Last of Us Part II", 26, 49.99, "PS4", 1, 1);
 echo "<strong>" . $miJuego->titulo . "</strong>";
 echo "<br>Precio: " . $miJuego->getPrecio() . " euros";
