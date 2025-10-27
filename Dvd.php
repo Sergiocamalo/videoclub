@@ -10,10 +10,9 @@ include_once "Soporte.php";
         $this->idiomas = $idiomas;
         $this->formatoPantalla = $formatoPantalla;
     }
-
-    public function mostrarDetalles()
+    public function muestraResumen()
     {
-        parent::mostrarDetalles();
-        echo "Idiomas: $idiomas<br> Formato Pantalla: $formatoPantalla";
+        parent::muestraResumen();
+        echo "Idiomas: {$this->idiomas}<br> Formato Pantalla: {$this->formatoPantalla}";
     }
  }

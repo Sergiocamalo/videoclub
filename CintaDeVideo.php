@@ -9,10 +9,10 @@ class CintaDeVideo extends Soporte
         parent::__construct($titulo, $numero, $precio);
         $this->duracion = $duracion;
     }
-    public function mostrarDetalles()
+    public function muestraResumen()
     {
-        parent::mostrarDetalles();
-        echo "Duración: $duracion";
+        parent::muestraResumen();
+        echo "Duración: {$this->duracion}";
     }
 
 }

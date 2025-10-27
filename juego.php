@@ -1,7 +1,12 @@
 <?php
 require_once "Soporte.php";
 
-class Juego extends Soporte {
+class Juego extends Soporte
+{
+    private int $minNumJugadores;
+    private int $maxNumJugadores;
+    private string $consola;
+
     public function __construct(
         string $titulo, int $numero, float $precio,
         string $consola,
@@ -9,10 +14,13 @@ class Juego extends Soporte {
         int $maxNumJugadores
     ) {
         parent::__construct($titulo, $numero, $precio);
+        $this->consola=$consola;
+        $this->minNumJugadores = $minNumJugadores;
+        $this->maxNumJugadores = $maxNumJugadores;
     }
 
-
-    public function muestraJugadoresPosibles(): void {
+    public function muestraJugadoresPosibles(): void
+    {
         if ($this->minNumJugadores === $this->maxNumJugadores) {
             if ($this->minNumJugadores === 1) {
                 echo "Para un jugador<br>";
@@ -23,11 +31,11 @@ class Juego extends Soporte {
             echo "De {$this->minNumJugadores} a {$this->maxNumJugadores} jugadores<br>";
         }
     }
-
-    
-    public function muestraResumen(): void {
+    public function muestraResumen()
+    {
         echo "<br>Juego para: {$this->consola}<br>";
         parent::muestraResumen();
         $this->muestraJugadoresPosibles();
     }
-}
+ }
+
