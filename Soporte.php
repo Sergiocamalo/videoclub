@@ -31,4 +31,9 @@ private static float $IVA = 0.21;
 public function muestraResumen(){
     echo "{$this->titulo}<br>{$this->precio} € (IVA no incluido)<br>";
 }
+
+    public function getTitulo()
+    {
+        return $this->titulo;
+    }
 }
