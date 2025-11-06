@@ -1,5 +1,7 @@
 <?php
- abstract class Soporte{
+include_once "Resumible.php";
+abstract class Soporte implements Resumible
+{
     public string $titulo;
     protected int $numero;
     private float $precio;
@@ -28,10 +30,10 @@
         return $this->numero;
     }
 
-public function muestraResumen(){
-    echo "{$this->titulo}<br>{$this->precio} € (IVA no incluido)<br>";
-}
-
+    public function muestraResumen(): void
+    {
+        echo "{$this->titulo}<br>{$this->precio} € (IVA no incluido)<br>";
+    }
     public function getTitulo()
     {
         return $this->titulo;

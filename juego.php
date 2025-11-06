@@ -14,7 +14,7 @@ class Juego extends Soporte
         int $maxNumJugadores
     ) {
         parent::__construct($titulo, $numero, $precio);
-        $this->consola=$consola;
+        $this->consola         = $consola;
         $this->minNumJugadores = $minNumJugadores;
         $this->maxNumJugadores = $maxNumJugadores;
     }
@@ -31,12 +31,11 @@ class Juego extends Soporte
             echo "De {$this->minNumJugadores} a {$this->maxNumJugadores} jugadores<br>";
         }
     }
-    public function muestraResumen()
+    public function muestraResumen(): void
     {
         echo "<br>Juego para: {$this->consola}<br>";
         parent::muestraResumen();
         $this->muestraJugadoresPosibles();
         echo "<br>";
     }
- }
-
+}
