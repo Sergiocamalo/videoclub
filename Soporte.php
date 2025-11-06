@@ -1,9 +1,9 @@
 <?php
- class Soporte{
+ abstract class Soporte{
     public string $titulo;
     protected int $numero;
     private float $precio;
-private static float $IVA = 0.21;
+    private static float $IVA = 0.21;
     public function __construct($titulo, $numero, $precio)
     {
         $this->titulo = $titulo;
@@ -18,8 +18,8 @@ private static float $IVA = 0.21;
 
     public function getPrecioConIva()
     {
-        $precioIva = $this.getPrecio();
-        $precioIva = $precioIva * $IVA;
+        $precioIva = $this->getPrecio();
+        $precioIva = $precioIva * self::$IVA + $precioIva;
         return $precioIva;
     }
 

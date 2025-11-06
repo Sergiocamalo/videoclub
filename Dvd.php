@@ -13,6 +13,6 @@ include_once "Soporte.php";
     public function muestraResumen()
     {
         parent::muestraResumen();
-        echo "Idiomas: {$this->idiomas}<br> Formato Pantalla: {$this->formatoPantalla}";
+        echo "Idiomas: {$this->idiomas}<br> Formato Pantalla: {$this->formatoPantalla}<br><br>";
     }
  }

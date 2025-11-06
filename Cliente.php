@@ -80,6 +80,7 @@ class Cliente {
 
         foreach ($this->soportesAlquilados as $soporte) {
             $soporte->muestraResumen();
+            echo "<br>";
         }
     }
 }

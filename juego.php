@@ -36,6 +36,7 @@ class Juego extends Soporte
         echo "<br>Juego para: {$this->consola}<br>";
         parent::muestraResumen();
         $this->muestraJugadoresPosibles();
+        echo "<br>";
     }
  }
 

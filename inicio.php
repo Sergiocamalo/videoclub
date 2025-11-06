@@ -12,14 +12,14 @@ echo "<br><br>"; // Añadimos un espacio para separar las pruebas
 
 include "CintaDeVideo.php";
 $miCinta = new CintaDeVideo("Los cazafantasmas", 23, 3.5, 107);
-echo "<strong>" . $miCinta->titulo . "</strong>";
+echo "<strong>" . $miCinta->titulo . "</strong><br>";
 $miCinta->muestraResumen();
 
 echo "<br><br>"; // Añadimos un espacio para separar las pruebas
 
 include "Dvd.php";
 $miDvd = new Dvd("Origen", 24, 15, "es,en,fr", "16:9");
-echo "<strong>" . $miDvd->titulo . "</strong>";
+echo "<strong>" . $miDvd->titulo . "</strong><br>";
 $miDvd->muestraResumen();
 
 echo "<br><br>"; // Añadimos un espacio para separar las pruebas
